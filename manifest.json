@@ -1,23 +1,20 @@
 {
     "manifest_version": 3,
     "name": "Retro 70s Terminal Theme",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Turn your browser into a classic terminal from the 70s.",
-    "theme": {
-        "colors": {
-        "frame": [10, 15, 10],
-        "toolbar": [20, 30, 20],
-        "tab_text": [0, 255, 102],
-        "tab_background_text": [0, 128, 51],
-        "bookmark_text": [0, 255, 102],
-        "ntp_background": [10, 15, 10],
-        "ntp_text": [0, 255, 102]
-        },
-        "tints": {
-            "buttons": [0.33, 1.0, 0.5]
-        }
-    },
     "chrome_url_overrides": {
         "newtab": "ntp.html"
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "global-retro.css"
+            ],
+            "run_at": "document_end"
+        }
+    ]
 }

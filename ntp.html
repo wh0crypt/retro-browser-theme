@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Retro Terminal v1.0.4</title>
+    <title>Retro Terminal</title>
+
     <style>
         body {
             background-color: #0a0f0a;
@@ -12,17 +13,23 @@
             padding: 50px;
             margin: 0;
             text-shadow: 0 0 5px #00ff66;
+            overflow: hidden;
         }
 
         .crt-effect {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            inset: 0;
+
+            background:
+                linear-gradient(rgba(18, 16, 16, 0) 50%,
+                    rgba(0, 0, 0, 0.25) 50%),
+                linear-gradient(90deg,
+                    rgba(255, 0, 0, 0.06),
+                    rgba(0, 255, 0, 0.02),
+                    rgba(0, 0, 255, 0.06));
+
             background-size: 100% 4px, 6px 100%;
-            z-index: 2;
+
             pointer-events: none;
         }
 
@@ -51,12 +58,14 @@
 
 <body>
     <div class="crt-effect"></div>
-    <div class="terminal">
-        <p>BRAVE MAINFRAME SYSTEM OS v7.4.2</p>
-        <p>COPYRIGHT (C) 1976, BRAVE INDUSTRIES INC.</p>
-        <p>READY.</p>
-        <p>_> <span class="cursor"></span></p>
-    </div>
+
+    <h1>BRAVE MAINFRAME SYSTEM OS v7.4.2</h1>
+
+    <p>COPYRIGHT (C) 1976, BRAVE INDUSTRIES INC.</p>
+
+    <p>READY.</p>
+
+    <p>_> <span class="cursor"></span></p>
 </body>
 
 </html>

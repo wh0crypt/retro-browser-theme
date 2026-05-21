@@ -1,0 +1,225 @@
+/* =======================================================
+   RETRO TERMINAL THEME v2.0
+   Safer version for modern websites
+   ======================================================= */
+
+/* ===== GLOBAL ===== */
+
+html,
+body {
+    background-color: #0a0f0a !important;
+    color: #00ff66 !important;
+    font-family: "Courier New", Courier, monospace !important;
+
+    text-shadow:
+        0 0 2px #00ff66,
+        0 0 4px #00ff66;
+
+    filter:
+        brightness(0.95) contrast(1.05);
+}
+
+/* ===== TEXT ===== */
+
+body,
+p,
+span,
+div,
+li,
+td,
+th,
+label,
+small,
+strong,
+em,
+code,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #00ff66 !important;
+}
+
+/* ===== LINKS ===== */
+
+a {
+    color: #44ff99 !important;
+    text-decoration: underline !important;
+}
+
+a:hover {
+    color: #88ffbb !important;
+}
+
+/* ===== BUTTONS ===== */
+
+button,
+[role="button"],
+input,
+textarea,
+select {
+    background-color: #001100 !important;
+    color: #00ff66 !important;
+
+    border:
+        1px solid #00ff66 !important;
+
+    border-radius: 0px !important;
+
+    box-shadow:
+        0 0 4px #00ff66 !important;
+}
+
+/* ===== HOVER ===== */
+
+button:hover,
+[role="button"]:hover,
+input:hover,
+textarea:hover,
+select:hover {
+    background-color: #002200 !important;
+}
+
+/* ===== INPUT PLACEHOLDERS ===== */
+
+::placeholder {
+    color: #44aa66 !important;
+}
+
+/* ===== PANELS / CARDS ===== */
+
+section,
+article,
+aside,
+main,
+nav,
+header,
+footer {
+    background-color: #0d140d !important;
+    border-radius: 0px !important;
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #001100;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00aa44;
+    border: 1px solid #00ff66;
+}
+
+/* ===== IMAGES ===== */
+
+img {
+    filter:
+        brightness(0.8) contrast(1.2) sepia(0.6) hue-rotate(70deg) saturate(1.8);
+
+    opacity: 0.92 !important;
+}
+
+/* ===== VIDEOS ===== */
+
+video {
+    filter:
+        brightness(0.85) contrast(1.1) saturate(0.7);
+}
+
+/* ===== IFRAMES ===== */
+
+iframe {
+    border:
+        1px solid #00ff66 !important;
+}
+
+/* ===== REMOVE MODERN ROUNDED UI ===== */
+
+* {
+    border-radius: 0px !important;
+}
+
+/* ===== TWITTER / X FIXES ===== */
+
+[data-testid],
+[aria-label],
+[role="dialog"] {
+    background-color: #0d140d !important;
+    color: #00ff66 !important;
+}
+
+/* ===== DISCORD FIXES ===== */
+
+[class*="container"],
+[class*="chat"],
+[class*="sidebar"] {
+    background-color: #0a0f0a !important;
+}
+
+/* ===== GITHUB FIXES ===== */
+
+[class*="Header"],
+[class*="Popover"],
+[class*="menu"] {
+    background-color: #0d140d !important;
+}
+
+/* ===== CRT OVERLAY ===== */
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(rgba(18, 16, 16, 0) 50%,
+            rgba(0, 0, 0, 0.18) 50%),
+
+        linear-gradient(90deg,
+            rgba(255, 0, 0, 0.03),
+            rgba(0, 255, 0, 0.015),
+            rgba(0, 0, 255, 0.03));
+
+    background-size:
+        100% 3px,
+        6px 100%;
+
+    z-index: 2147483647;
+}
+
+/* ===== SELECTION ===== */
+
+::selection {
+    background: #00ff66 !important;
+    color: #001100 !important;
+}
+
+/* ===== TERMINAL CURSOR EFFECT ===== */
+
+input,
+textarea {
+    caret-color: #00ff66 !important;
+}
+
+/* ===== AVOID BREAKING SVG UI ===== */
+
+svg {
+    filter: brightness(0.9);
+}
+
+/* ===== BETTER READABILITY ===== */
+
+* {
+    scrollbar-color: #00ff66 #001100;
+}
