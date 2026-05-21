@@ -3,6 +3,12 @@
    Safer version for modern websites
    ======================================================= */
 
+/* Disable on PDF viewer */
+embed[type="application/pdf"],
+iframe[src*=".pdf"] {
+    all: unset !important;
+}
+
 /* ===== GLOBAL ===== */
 
 html,
