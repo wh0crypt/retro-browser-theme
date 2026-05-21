@@ -4,9 +4,6 @@
     "version": "1.0",
     "description": "Turn your browser into a classic terminal from the 70s.",
     "theme": {
-        "images": {
-            "theme_frame": "images/empty.png"
-        },
         "colors": {
         "frame": [10, 15, 10],
         "toolbar": [20, 30, 20],
